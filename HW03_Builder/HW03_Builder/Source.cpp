@@ -167,11 +167,11 @@ public:
 
 void client(CarBuilder* builder)
 {
-	Shop waiter;
-	waiter.SetCarBuilder(builder);
-	waiter.ConstructCar();
-	Car pizza = waiter.GetCar();
-	pizza.ShowCar();
+	Shop manager;
+	manager.SetCarBuilder(builder);
+	manager.ConstructCar();
+	Car car = manager.GetCar();
+	car.ShowCar();
 }
 
 void main()
