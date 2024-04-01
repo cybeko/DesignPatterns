@@ -146,22 +146,22 @@ public:
 
 class Shop
 {
-	CarBuilder* pizzaBuilder;
+	CarBuilder* carBuilder;
 public:
 	void SetCarBuilder(CarBuilder* pb)
 	{
-		pizzaBuilder = pb;
+		carBuilder = pb;
 	}
 	Car GetCar()
 	{
-		return pizzaBuilder->GetCar();
+		return carBuilder->GetCar();
 	}
 	void ConstructCar()
 	{
-		pizzaBuilder->BuildFrame();
-		pizzaBuilder->BuildEngine();
-		pizzaBuilder->BuildWheels();
-		pizzaBuilder->BuildGearBox();
+		carBuilder->BuildFrame();
+		carBuilder->BuildEngine();
+		carBuilder->BuildWheels();
+		carBuilder->BuildGearBox();
 	}
 };
 
